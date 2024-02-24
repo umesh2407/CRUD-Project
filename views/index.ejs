@@ -42,11 +42,11 @@
                             <td><%= item.age %></td>
                             <td><%= item.fees %></td>
                             <td>
-                                <form action="/student/edit/<%= item._id %>" method="get" class="d-inline">
+                                <form action="/edit/<%= item._id %>" method="get" class="d-inline">
                                     <button type="submit" class="btn">
                                     <i class="fas fa-pen-square text-info"></i>
                                 </button></form>
-                                <form action="/student/delete/<%= item._id %>" method="post" class="d-inline">
+                                <form action="/delete/<%= item._id %>" method="post" class="d-inline">
                                     <button type="submit" class="btn">
                                         <i class="fas fa-trash text-danger"></i>
                                 </button></form>

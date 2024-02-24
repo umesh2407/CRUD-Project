@@ -1,14 +1,8 @@
 import mongoose from 'mongoose';
-
-
-
-
 const connectDB = async (DATABSE_URL)=>{
 try{
     const DB_OPTIONS={
-       
-        dbname:'teacherdb',
-        
+        dbname:'student_db',
     };
     await mongoose.connect(DATABSE_URL, DB_OPTIONS);
     console.log("connected succesfully..");

@@ -13,7 +13,7 @@ class studentController{
         fees:fees
       })
       const result = await doc.save();
-      res.redirect("/student")
+      res.redirect("/")
 
     } catch (error) {
       console.log(error);
@@ -42,7 +42,7 @@ class studentController{
   static updateDocById = async (req,res)=>{
     try {
       const result = await StudentModel.findByIdAndUpdate(req.params.id, req.body)
-      res.redirect("/student")
+      res.redirect("/")
       
     } catch (error) {
       console.log(error)
@@ -52,7 +52,7 @@ class studentController{
   static deleteDocById = async (req,res)=>{
     try {
       const result = await StudentModel.findByIdAndDelete(req.params.id)
-      res.redirect("/student")
+      res.redirect("/")
     } catch (error) {
       console.log(error)
 
