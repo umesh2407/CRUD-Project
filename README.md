@@ -1,4 +1,3 @@
-Certainly! Below is a template for a `README.md` file for a CRUD project using Express.js, Mongoose, and Node.js to manage a list of students. Customize it according to your specific project details:
 
 ```markdown
 Student Management CRUD API
@@ -51,7 +50,7 @@ Installation
 2. Navigate to the project directory:
 
    ```bash
-   cd student-management-crud
+   cd CRUD-Project
    ```
 
 3. Install dependencies:
@@ -63,7 +62,7 @@ Installation
 4. Create a `.env` file in the root directory and add your MongoDB connection string:
 
    ```env
-   MONGODB_URI=your_mongodb_connection_string
+   MONGODB_URI = your_mongodb_connection_string
    ```
 
    Replace `your_mongodb_connection_string` with the actual connection string.
@@ -71,7 +70,7 @@ Installation
 5. Start the server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 6. Open your browser and visit `http://localhost:3000` to test the API using a tool like Postman or curl.
