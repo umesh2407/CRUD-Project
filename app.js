@@ -15,6 +15,9 @@ connectDB(DATABASE_URL);
 const app = express()
 const port = process.env.PORT || '3000'
 
+app.set('view engine', 'ejs'); // Replace 'ejs' with your actual view engine
+app.set('views', join(process.cwd(), 'views')); // Adjust the path accordingly
+
 
 app.use(express.urlencoded({extended:false}));
 app.use('/',express.static(join(process.cwd(),"public")))
