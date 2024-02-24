@@ -1,11 +1,11 @@
 {
     "version": 2,
-    "builds": [
-      { "src": "/app.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/.*", "dest": "/app.js" }
-    ]
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "@vercel/node",
+        "memory": 1024, 
+        "maxDuration": 30 
+      }
+    }
   }
   
