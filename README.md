@@ -28,7 +28,7 @@ Technologies Used
 
 - Node.js
 - Express.js
-- Mongoose (MongoDB)
+- Mongoose(MongoDB)
 
 Getting Started
 
