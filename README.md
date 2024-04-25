@@ -1,6 +1,6 @@
 
 ```markdown
-Student Management CRUD API
+Student Management CRUD 
 
 This project is a simple CRUD (Create, Read, Update, Delete) API for managing a list of students. It is built using Express.js, Mongoose, and Node.js.
 
